@@ -1,0 +1,11 @@
+[user]
+	email = [your email that you want to use here]
+	name = [your user name]
+[pull]
+	ff = true
+[rerere]
+        enabled = true
+[column]
+        ui = auto
+[branch]
+        sort = -committerdate
