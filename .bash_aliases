@@ -25,11 +25,18 @@ else
  PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(__git_ps1) \n \$ '
 fi
 
-unset color_prompt force_color_prompt
+unset color_prompt force_color_prompt;
 
 alias sail='./vendor/bin/sail';
 alias html='cd /var/www/html/';
 alias pa='php artisan';
 alias pas='php artisan serve';
 alias hidden='ls -Al | grep "\."'
-export PATH="$PATH:/home/$USER/.local/bin:.composer/vendor/bin:/usr/bin:$HOME/.config/composer/vendor/bin:./vendor/bin"
+
+alias mb='php artisan make:migration --path=database/migrations/organization';
+
+export PATH="$PATH:/home/$USER/.local/bin:.composer/vendor/bin:/usr/bin:$HOME/.config/composer/vendor/bin:./vendor/bin";
+
+# go specific
+
+export PATH="$PATH:/home/$USER/.local/bin/go/bin";
