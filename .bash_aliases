@@ -34,8 +34,8 @@ alias pas='php artisan serve';
 alias hidden='ls -Al | grep "\."'
 
 alias mb='php artisan make:migration --path=database/migrations/organization';
-alias mbd='php artisan make:migration --path=database/migrations/organization/dental/';
-alias mbp='php artisan make:migration --path=database/migrations/organization/physio/';
+alias mbd='php artisan make:migration --path=database/migrations/organization/dental';
+alias mbp='php artisan make:migration --path=database/migrations/organization/physio';
 
 export PATH="$PATH:/home/$USER/.local/bin:.composer/vendor/bin:/usr/bin:$HOME/.config/composer/vendor/bin:./vendor/bin";
 
