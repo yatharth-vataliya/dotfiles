@@ -27,6 +27,12 @@ fi
 
 unset color_prompt force_color_prompt;
 
+set_tab_title() {
+ echo -ne "\033]0;${PWD##*/}\007";
+}
+
+PROMPT_COMMAND="set_tab_title; $PROMPT_COMMAND";
+
 alias sail='./vendor/bin/sail';
 alias html='cd /var/www/html/';
 alias pa='php artisan';
