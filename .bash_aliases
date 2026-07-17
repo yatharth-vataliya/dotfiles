@@ -40,8 +40,6 @@ alias pas='php artisan serve';
 alias hidden='ls -Al | grep "\."'
 
 alias mb='php artisan make:migration --path=database/migrations/organization';
-alias mbd='php artisan make:migration --path=database/migrations/organization/dental';
-alias mbp='php artisan make:migration --path=database/migrations/organization/physio';
 
 export PATH="$PATH:/home/$USER/.local/bin:.composer/vendor/bin:/usr/bin:$HOME/.config/composer/vendor/bin:./vendor/bin";
 
@@ -52,6 +50,3 @@ export PATH="$PATH:/home/$USER/.local/bin/go/bin";
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
-
-#. "$HOME/.cargo/env" # can be enabled if rust is installed
-
