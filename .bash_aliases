@@ -45,7 +45,7 @@ export PATH="$PATH:/home/$USER/.local/bin:.composer/vendor/bin:/usr/bin:$HOME/.c
 
 # go specific
 
-export PATH="$PATH:/home/$USER/.local/bin/go/bin";
+export PATH="$PATH:/home/$USER/.local/bin/go/bin:$(go env GOPATH)/bin";
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
